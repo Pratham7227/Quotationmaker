@@ -240,11 +240,11 @@ const Work = () => {
                                     <p>Loading...</p>
                                 ) : (
                                     tempArr.map((element, index) => (
-                                        <div key={index} className="flex  justify-between ml-5">
-                                            <input type={element.type[0]} placeholder={element.placeholder[0]} className="input bg-transparent p-1 focus:outline-none focus:border-b-2 focus:border-green-200" onChange={(e) => handleSection(e, index)} name="itemname" value={element.itemname} />
-                                            <input type={element.type[1]} placeholder={element.placeholder[1]} className="input bg-transparent p-1 focus:outline-none focus:border-b-2 focus:border-green-200" onChange={(e) => handleSection(e, index)} name="quantity" value={element.quantity} />
-                                            <input type={element.type[2]} placeholder={element.placeholder[2]} className="input bg-transparent p-1 focus:outline-none focus:border-b-2 focus:border-green-200" onChange={(e) => handleSection(e, index)} name="rate" value={element.rate} />
-                                            <input type={element.type[3]} placeholder={element.placeholder[3]} className="input bg-transparent p-1 focus:outline-none focus:border-b-2 focus:border-green-200" value={element.amount} disabled />
+                                        <div key={index} className="flex  justify-between ml-5 flex-wrap ">
+                                            <input type={element.type[0]} placeholder={element.placeholder[0]} className="input bg-transparent p-1 focus:outline-none focus:border-b-2 focus:border-green-200 w-full  md:w-fit" onChange={(e) => handleSection(e, index)} name="itemname" value={element.itemname} />
+                                            <input type={element.type[1]} placeholder={element.placeholder[1]} className="input bg-transparent p-1 focus:outline-none focus:border-b-2 focus:border-green-200 w-full md:w-fit" onChange={(e) => handleSection(e, index)} name="quantity" value={element.quantity} />
+                                            <input type={element.type[2]} placeholder={element.placeholder[2]} className="input bg-transparent p-1 focus:outline-none focus:border-b-2 focus:border-green-200 w-full md:w-fit" onChange={(e) => handleSection(e, index)} name="rate" value={element.rate} />
+                                            <input type={element.type[3]} placeholder={element.placeholder[3]} className="input bg-transparent p-1 focus:outline-none focus:border-b-2 focus:border-green-200 w-full md:w-fit" value={element.amount} disabled />
                                         </div>
                                     ))
                                 )}
